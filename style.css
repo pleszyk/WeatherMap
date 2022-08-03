@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
+  font-family: 'Roboto', sans-serif;
+}
+#map {
+  height: 100%;
+}
+
+#toggle-btn,
+.menu a {
+  top: 30px;
+  right: 30px;
+  transition: 0.5s;
+}
+
+.active {
+  transform: rotate(360deg);
+}
+
+.shadow {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.33);
+}
+
+.menu a,
+#toggle-btn,
+#location-btn,
+#light-btn,
+#sat-btn {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  height: 40px;
+  width: 40px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#toggle-btn,
+#location-btn,
+#light-btn,
+#sat-btn {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.33);
+}
+
+#location-btn {
+  bottom: 30px;
+  right: 30px;
+  transition: 0.3s;
+}
+
+#light-btn {
+  top: 30px;
+  left: 30px;
+  transition: 0.3s;
+}
+
+#sat-btn {
+  bottom: 30px;
+  left: 30px;
+  transition: 0.3s;
+}
+
+#searchInput {
+  border-radius: 5px;
+  width: 175px;
+  height: 30px;
+  outline: none;
+  border: none;
+  box-shadow: 10px 10px 30px rgb(0, 0, 0);
+  -webkit-appearance: none;
+  transition: .15s;
+}
+
+.controls {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#modal {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #16273c;
+  opacity: .9;
+  border-radius: 10px;
+  width: 300px;
+  height: 120px;
+  display: none;
+  box-shadow: 10px 10px 30px rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: .15s;
+}
+
+#x {
+  position: absolute;
+  display: flex;
+  top: 12px;
+  right: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Today,
+.discription {
+  padding: 1px;
+  margin-left: 5px;
+}
+
+.Today {
+  font-size: 20px;
+  display: flex;
+}
+
+
+.discription {
+  font-size: 12px;
+}
+
+.forecast-day {
+  font-size: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1px;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: row;
+}
+
+.w-icon {
+  width: 30px;
+  vertical-align: middle;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(333deg) brightness(104%) contrast(103%);
+}
+
+p {
+  margin: 0;
+}
+
+.forecast-day--temp {
+  margin: auto;
+}
+
+#sat-btn:hover,
+#light-btn:hover,
+#location-btn:hover,
+#toggle-btn:hover,
+#menu a:hover {
+  background: #cecece;
+}
+
+@media (min-width: 850px) {
+  #modal {
+    height: 160px;
+    width: 380px;
+  }
+  .Today {
+    font-size: 26px;
+  }
+  .discription{
+    font-size: 18;
+  }
+  .forecast-day {
+    font-size: 16px;
+  }
+  .w-icon{
+    width: 40px;
+  }
+  #searchInput {
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-7px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}

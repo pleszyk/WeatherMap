@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo.png" />
+    <title>Weather Map</title>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <input
+      id="searchInput"
+      class="controls"
+      type="text"
+      onfocus="this.value=''"
+      placeholder="Search"
+    />
+
+    <div class="modal" id="modal">
+      <section class="weather">
+        <div class="container">
+          <div class="day"></div>
+          <div class="forecast"></div>
+        </div>
+      </section>
+      <div id="x"><i class="fas fa-times"></i></div>
+    </div>
+
+    <div class="menu" id="menu">
+      <a id="cloud">
+        <i class="fas fa-cloud"></i>
+      </a>
+      <a id="rain">
+        <i class="fas fa-tint"></i>
+      </a>
+      <a id="wind">
+        <i class="fas fa-wind"></i>
+      </a>
+      <a id="temp">
+        <i class="fas fa-thermometer-half"></i>
+      </a>
+      <a id="pressure">
+        <img src="img/gauge.png" alt="" width="30px" />
+      </a>
+      <a id="radar">
+        <img src="img/radar.png" alt="" width="30px" />
+      </a>
+      <button id="toggle-btn">
+        <i class="fas fa-layer-group"></i>
+      </button>
+    </div>
+
+    <div class="location-btn">
+      <button id="location-btn">
+        <i class="fas fa-location-arrow"></i>
+      </button>
+    </div>
+
+    <div class="light-btn">
+      <button id="light-btn">
+        <i class="fas fa-adjust"></i>
+      </button>
+    </div>
+
+    <div class="sat-btn">
+      <button id="sat-btn">
+        <i class="fas fa-satellite"></i>
+      </button>
+    </div>
+
+    <script src="dark.js"></script>
+    <script src="script.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?libraries=places&key=MAPS_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>
