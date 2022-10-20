@@ -8,7 +8,7 @@ Implement weather layers onto a map, use clean UI to change layers, find locatio
 
 ## Usage
 
-The top right button to displays the layers and switches between them. The bottom right button gets your current location and displays a forecast. The bottom left button toggles satellite map mode. The top left button toggles light & dark mode. The search box will autocomplete suggested places, show a pin & forecast for that location.
+The top right button displays the layers and switches between them. The bottom right button gets your current location and displays a forecast. The bottom left button toggles satellite map mode. The top left button toggles light & dark mode. The search box will autocomplete suggested places, show a pin & forecast for that location.
 
 ## Implementation
 
