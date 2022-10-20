@@ -4,7 +4,7 @@ Shows live weather layers across the globe. (animated radar layer is limited to 
 
 ## Goals
 
-Implement weather layers onto a map, use clean UI to change layers, find location and show forecast.
+Implement weather layers onto a map, use a clean UI to change layers, find location and show forecast.
 
 ## Usage
 
