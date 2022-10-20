@@ -12,7 +12,7 @@ The top right button displays the layers and switches between them. The bottom r
 
 ## Implementation
 
-Written in plain Javascript, HTML & CSS. Google Maps API for map, autocomplete searchbox & geolocation.
+Written in vanilla Javascript, HTML & CSS. Google Maps API for map, autocomplete searchbox & geolocation.
 OpenWeatherMaps API for static weather layers and forecast data. 
 Iowa Environmental Mesonet Tile Map Service API for animated NEXRAD Base Reflectivity layer
 
