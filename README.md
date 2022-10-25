@@ -3,6 +3,7 @@ https://user-images.githubusercontent.com/47582558/196988075-7a443ebb-5d4a-4481-
 # WeatherMap
 
 Shows live weather layers across the globe. (animated radar layer is limited to the U.S.)
+[Demo](https://www.szyk.io/weatherMap/index.html)
 
 ## Goals
 
